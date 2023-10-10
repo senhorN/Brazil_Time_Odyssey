@@ -1,5 +1,2 @@
-# Brazil_Time_Odyssey
-O jogo é um fusionamento entre ficção científica e contexto histórico, centrado na história do Brasil. 
-
-
-mudança
+# Brazil Time Odyssey
+ O jogo é um fusionamento entre ficção científica e contexto histórico, centrado na história do Brasil. 
