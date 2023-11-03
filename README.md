@@ -4,4 +4,4 @@
 ![image](https://github.com/senhorN/Brazil_Time_Odyssey/assets/90424448/2870409d-a08c-4977-a383-7e20a6eda133)
 
 
-
+`Adicinamento de elementos de sprites para a implementação do ambiente e etc.`
