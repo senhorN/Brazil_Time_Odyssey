@@ -3,5 +3,3 @@
 `O jogo é um fusionamento entre ficção científica e contexto histórico, centrado na história do Brasil. ` 
 #### ***jogo em fase de desenvolvimento... ⏳***
 
-`Você se passa por um jovem garoto inteligente filho de um cientista renomado que ajudou a construir uma máquina do tempo para o governo. Derrepente seu pai descobre que as entidades do governo usa a máquina do tempo para atividades que beneficia a si próprio. 
-E se pai decide fazer algo a respeito roubando ela, e a esconde. Assim,  você e ele estão sendo perseguidos e vocês decidem viajar pela linha temporal.`
