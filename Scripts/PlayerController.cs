@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    #region player variable
+    #region player variables
         private Rigidbody2D _playerRigidBody2D;
         public float        _playerSpeed;
         private Vector2     _playerDirection; //o Vector2 é os eixos X e Y
