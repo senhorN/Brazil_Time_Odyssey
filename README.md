@@ -12,15 +12,18 @@
 <p>jogo é um fusionamento entre ficção científica e contexto histórico, centrado na história do Brasil. Através de uma pesquisa aprofundada, focamos em dois marcos específicos, notadamente "1500 - Descobrimento do Brasil" e "1822 - Independência do Brasil". Embora esses momentos sejam distantes cronologicamente, introduzimos elementos de ficção científica por meio de anomalias temporais que perturbam essas épocas. Os jogadores são incumbidos de corrigir essas distorções enquanto absorvem informações adicionais sobre a história do Brasil. </p>
 
 <hr>
+<h3>Banco de dados 🗄</h3>
+<p>No desenvolvimento do jogo, foi adotado o Firebase como plataforma de autenticação de jogadores, gerenciamento de login, cadastro e outras funcionalidades. O Firebase é um exemplo de banco de dados orientado a documentos, conforme descrito por Brito (2010), que destaca a emergência de modelos não relacionais devido às limitações dos modelos relacionais tradicionais baseados em SGBD.</p>
+<hr>
 
-<h3>Tecnologias Utilizadas</h3>
+<h3>Tecnologias Utilizadas ⚙️</h3>
 
 | Stack | Version |
 | --- | --- |
 | Unity | 3.0 |
+| Firebase | - |
 
-<h3>Banco de dados</h3>
-<p>No desenvolvimento do jogo, foi adotado o Firebase como plataforma de autenticação de jogadores, gerenciamento de login, cadastro e outras funcionalidades. O Firebase é um exemplo de banco de dados orientado a documentos, conforme descrito por Brito (2010), que destaca a emergência de modelos não relacionais devido às limitações dos modelos relacionais tradicionais baseados em SGBD.</p>
+
 
 
 
