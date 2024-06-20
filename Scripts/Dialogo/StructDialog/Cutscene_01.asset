@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e9da6108c03f92429277a8f39edbec6, type: 3}
+  m_Name: Cutscene_01
+  m_EditorClassIdentifier: 
+  talkScript:
+  - name: Victor
+    text: Hummm... Onde eu estou...?
+  - name: ???
+    text: "Quem \xE9 voc\xEA garoto? "
+  - name: ???
+    text: ...
+  - name: ???
+    text: 'Essas roupas... '
+  - name: ???
+    text: "V-voc\xEA... \xE9 do futuro tamb\xE9m...? "
+  - name: Victor
+    text: "Futuro!? \r\n"
+  - name: Victor
+    text: " C-como assim, onde eu t\xF4 ??? "
+  - name: ???
+    text: ' No Brasil, mas especificamente, no ano por volta de 1480. '
+  - name: Victor
+    text: ...
+  - name: Victor
+    text: '!'
+  - name: ???
+    text: "A prop\xF3sito, meu nome \xE9 Alexsander eu venho do ano 2500 e voc\xEA? "
+  - name: Victor
+    text: ...
+  - name: Alexsander
+    text: "Voc\xEA deve estar em choque, vamos a minha casa, l\xE1 voc\xEA poder\xE1
+      digerir a informa\xE7\xE3o. \r\n"

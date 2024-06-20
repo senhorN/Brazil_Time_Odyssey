@@ -5,11 +5,18 @@ using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.UIElements;
 using UnityEngine.SceneManagement;
+using Unity.VisualScripting;
 
 public class PlayerController : MonoBehaviour
-{
+{   
+#region instâncias
+    //Instancias
+    GameOverController gameOver_ = new GameOverController();
+    AudioController audioController_ = new AudioController();
+    
+#endregion
 
-    #region variable
+#region variable
     // Vari�veis para anima��es e movimentos
     private Rigidbody2D _playerRigidbody2D; // Rigidbody do jogador para movimento f�sico
     private Vector2 _playerDirection; // Dire��o do jogador
@@ -27,35 +34,39 @@ public class PlayerController : MonoBehaviour
     private Vector3 healtBarScale; // Escala da barra de vida
     private float healtPercent; // Porcentagem da vida para calcular a escala da barra
 
+    public Transform btnSim;
+
+    //cogumelo
+    private int totalHealth;
     
-    
+#endregion
 
-
-    #endregion
-
+    //posição em que o player começa
     public VectorValue startingPosition;
-
-
     
-
-    // M�todo chamado no in�cio do jogo
     void Start()
     {
         transform.position = startingPosition.InitialValue; 
 
         AttackEnable(); // Desabilita o ataque no in�cio
 
-        _playerRigidbody2D = GetComponent<Rigidbody2D>(); // Obt�m o Rigidbody do jogador
-        _playerAnimator = GetComponent<Animator>(); // Obt�m o Animator do jogador
+        _playerRigidbody2D = GetComponent<Rigidbody2D>();
+        _playerAnimator = GetComponent<Animator>();
 
-        _playerSpeed = _playerInitialSpeed; // Define a velocidade inicial do jogador
+        // Define a velocidade inicial do jogador
+        _playerSpeed = _playerInitialSpeed; 
 
-        // Configura��o inicial da barra de vida
+        // Configuração inicial da barra de vida
         healtBarScale = healthBar.localScale;
         healtPercent = healtBarScale.x / health;
+        totalHealth = health;
+
+        gameOver_ = FindObjectOfType<GameOverController>();
+        audioController_ = FindObjectOfType<AudioController>();
+
     }
 
-    // M�todo chamado a cada quadro
+
     void Update() {
         
         // Obt�m a dire��o do jogador a partir dos controles de entrada
@@ -96,6 +107,7 @@ public class PlayerController : MonoBehaviour
             Morrer();
         }
 
+
         // Verifica se o jogador pressionou a tecla de regenera��o de vida
         if (Input.GetKey(KeyCode.Space))
         {
@@ -108,13 +120,23 @@ public class PlayerController : MonoBehaviour
     }
 
     // M�todo para a morte do jogador
+    
     void Morrer()
-    {
-        _playerAnimator.SetBool("Die", true); // Ativa a anima��o de morte
-        Destroy(healtBarObject); // Destroi a barra de vida
-        //SceneManager.LoadScene("InitialScene"); // Reinicia a cena (comentado para desabilitar)
+    {   
+        _playerAnimator.SetBool("Die", true);
+        
+        // Destroi a barra de vida
+        Destroy(healtBarObject); 
+        
+        if(health <= 0 ){
+            if(gameOver_ != null){
+                
+                gameOver_.validationGameOver(true, 0);
+                audioController_.StopSound();
+            }
+        }
     }
-
+    
     // M�todo para habilitar o ataque
     public void AttackEnable()
     {
@@ -175,7 +197,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    #region Player attack 
+#region Player attack 
     // M�todo para atualizar o deslocamento do ataque
     void UpdateAttackOffset()
     {
@@ -236,9 +258,22 @@ public class PlayerController : MonoBehaviour
     {
         return _isAttack;
     }
-    #endregion
+#endregion
 
+#region food
+    public void Healing(int valCura)
+    {
+        if(health + valCura >= totalHealth)
+        {
+            health = totalHealth;
+        }
+        else if(health + valCura < totalHealth)
+        {
+            health = health + valCura;
+        }
 
+        UpdateHealthBar();
 
-    
+    }
+#endregion
 }

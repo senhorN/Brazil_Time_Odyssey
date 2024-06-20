@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e9da6108c03f92429277a8f39edbec6, type: 3}
+  m_Name: DialogueData
+  m_EditorClassIdentifier: 
+  talkScript:
+  - name: Alexsander
+    text: "Vejo que voc\xEA j\xE1 entendeu a situa\xE7\xE3o."
+  - name: Victor
+    text: "Obrigado, pela ajuda l\xE1 na floresta... "
+  - name: Victor
+    text: "Poderia me contar como eu vim parar aqui? \r\n"
+  - name: Alexsander
+    text: " N\xE3o, eu esperava que voc\xEA me contasse, al\xE9m do mais, eu nem
+      sei seu nome..."
+  - name: Victor
+    text: "Me desculpe... meu nome \xE9 Victor"
+  - name: Alexsander
+    text: "Hahahahaha, n\xE3o fique t\xE3o nervoso garoto, numa situa\xE7\xE3o dessa
+      qualquer um esqueceria de se apresentar. "
+  - name: Alexsander
+    text: "Eu era um cientista renomado, no ano de 2500, at\xE9 que fui sequestrado
+      pelos Time Rifters... "
+  - name: Alexsander
+    text: "Eu fui obrigado a trabalhar em pesquisa sobre o tempo, sempre for\xE7ado
+      a trabalhar pela seguran\xE7a da minha fam\xEDlia... "
+  - name: Alexsander
+    text: "At\xE9 que houve um acidente no laborat\xF3rio... Uma explos\xE3o... \r\n"
+  - name: Alexsander
+    text: 'Foi como eu vim parar aqui. '
+  - name: Victor
+    text: E o que eram aquelas criaturas floresta?
+  - name: Alexsander
+    text: Trata-se de slimes...
+  - name: Alexsander
+    text: "Consequ\xEAncia da explos\xE3o temporal. Eles s\xE3o fracos, por\xE9m
+      numerosos. H\xE1 outros por ai na floresta maiores e mais fortes. Cuidado pra
+      n\xE3o molhar p\xE9 do frango hahaha"
+  - name: Alexsander
+    text: "Essas criaturas vem destruindo tudo que v\xEA pela frente. E agora recebi
+      relatos de que est\xE3o atacando pessoas."
+  - name: Alexsander
+    text: Elimine todos os slimes pela floresta para acabar logo com isso...
+  - name: Alexsander
+    text: 'Receba... '
+  - name: 
+    text: "Voc\xEA recebeu uma espada de Alexsander!"
