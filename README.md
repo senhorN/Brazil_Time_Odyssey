@@ -22,4 +22,4 @@
 https://github.com/senhorN/Brazil_Time_Odyssey/assets/90424448/86f06c39-eb21-4774-be49-435d23aec0ff
 
 
-`jogo em fase de desenvolvimento...⏳`
+<a href="https://www.youtube.com/watch?v=EHqm8b0xP7A">Gameplay do jogo</a>
