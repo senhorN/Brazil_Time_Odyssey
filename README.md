@@ -15,11 +15,11 @@
 | Firebase | - |
 
 
+<hr>
 
-
-
+<h2>Intro do jogo</h2>
 
 https://github.com/senhorN/Brazil_Time_Odyssey/assets/90424448/86f06c39-eb21-4774-be49-435d23aec0ff
 
 
-<a href="https://www.youtube.com/watch?v=EHqm8b0xP7A">Gameplay do jogo</a>
+<a href="https://www.youtube.com/watch?v=EHqm8b0xP7A"  target="_blank">Gameplay do jogo</a>
